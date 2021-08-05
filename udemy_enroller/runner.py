@@ -33,7 +33,7 @@ def _redeem_courses(
                     status = udemy_actions.enroll(course_link)
                     if status == UdemyStatus.ENROLLED.value:
                         # Try to avoid udemy throttling by sleeping for 1-5 seconds
-                        sleep_time = random.choice(range(10, 50))
+                        sleep_time = random.choice(range(1, 5))
                         logger.debug(
                             f"Sleeping for {sleep_time} seconds between enrolments"
                         )
