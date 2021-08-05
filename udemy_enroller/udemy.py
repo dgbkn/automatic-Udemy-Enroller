@@ -371,6 +371,7 @@ class UdemyActions:
                 logger.warning(f"Checkout failed: {course_identifier}")
                 logger.debug(f"Checkout payload: {payload}")
                 logger.debug(f"Checkout result: {result}")
+                logger.debug("\n\n")
                 # TODO: Shouldn't happen. Need to monitor if it does
                 return UdemyStatus.EXPIRED.value
 
