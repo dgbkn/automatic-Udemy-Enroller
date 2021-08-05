@@ -1,7 +1,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/it-works-why.svg)](https://forthebadge.com)
 
-# ALPHA IS A PRE DEVELOPMENT BRANCH, DO NOT EXPECT USER FACING ISSUES TO BE ADDRESSED IN THIS BRANCH!
+
+# Developed By Mr. Dev Goyal ........ and Techiebank TEAM
 
 # Udemy Coupon Grabber & Course Enroller: Grab FREE Coupons!
 
@@ -17,44 +17,13 @@ The code scrapes course links and coupons from:
  - [tutorialbar.com](https://tutorialbar.com)
  - [discudemy.com](https://discudemy.com)
  - [coursevania.com](https://coursevania.com)
+ - [app.real.discount](https://app.real.discount)
+ 
 
 In case of any bugs or issues, please open an issue in github.
 
 Also, don't forget to **Fork & Star the repository if you like it!**
 
-***We are also on [GitLab](https://gitlab.com/the-automators/Automatic-Udemy-Course-Enroller-GET-PAID-UDEMY-COURSES-for-FREE)***
-
-**_Video Proof:_**
-
-[![Udemy Auto-Course-Enroller](https://img.youtube.com/vi/IW8CCtv2k2A/0.jpg)](https://www.youtube.com/watch?v=IW8CCtv2k2A "GET PAID UDEMY Courses for FREE, Automatically with this Python Script!")
-
----
-
-## **_Disclaimer & WARNINGS:_**
-
-
-1. **Use** this ONLY for **Educational Purposes!** By using this code you agree
-   that **I'm not responsible for any kind of trouble** caused by the code. **THIS PROJECT IS NOT AFFILIATED WITH UDEMY.** 
-2. **Make sure web-scraping is legal in your region.**
-3. This is **NOT a hacking script**, i.e., it can't enroll you for a specific
-   course! Instead it finds courses that provide coupon links to make the
-   transaction free and then LEGALLY enroll you to the course!
-
----
-
-## Requirements:
-
-### How to Install the Requirements?
-
-**Required Python version:** [Python 3.8+](https://www.python.org/downloads/)
-
-**You must have pip or poetry installed. Please look up how to install them in your OS.**
-
-Download a release of this project or clone the repository then navigate to the
-folder where you placed the files on. Type `pip install -r requirements.txt` to
-get all the requirements installed in one go. Similar instructions applies for poetry.
-
----
 
 ## Instructions
 
@@ -90,7 +59,7 @@ on [Tutorial Bar](https://www.tutorialbar.com/all-courses/page/1), [DiscUdemy](h
 enrolling you to Udemy courses. After it has enrolled you to courses from the
 first page, it then moves to the next site page and the cycle continues.
 
-- Stop the script by pressing ctrl+c in terminal to stop the enrollment process.
+- Stop the script by pressing ctrl+c in terminal to stop the enrollment process (in workflow by canceling it).
 
 ---
 
@@ -145,7 +114,7 @@ It is recommended to run the script using your terminal and system python.
 
 ### 7. Which branch to commit against?
 
-Pull request should be made on "develop" branch.
+Pull request should be made on "master" branch.
 
 ### 8. What's the roadmap?
 
@@ -160,23 +129,3 @@ and help us on what you want or talk to us about your proposed changes.
 By using this repo/script, you agree that the authors and contributors are under no obligation to provide support for the script and can discontinue it's development, as and when necessary, without prior notice. 
 
 ---
-
-## Supporters
-
-### Jetbrains
-
-[![JetBrains](https://i.imgur.com/h2R018M.jpg)](https://jetbrains.com/?from=udemy-free-course-enroller)
-
-Thanks to [JetBrains](https://jetbrains.com/?from=udemy-free-course-enroller) for supporting us. They are the maker of world class IDE and developer tooling. If you think their product might help you, please support them. 
-
-### GitBook
-
-[![GitBook](https://i.imgur.com/OkuB14I.jpg)](https://gitbook.com)
-
-Thanks to [GitBook](https://gitbook.com) for supporting us. GitBook is the best place to track personal notes and ideas for teams. If you think their product might help you, please support them.
-
-### GitLab
-
-[![GitLab](https://i.imgur.com/aUWtSn4.png)](https://gitlab.com)
-
-Thanks to [GitLab](https://gitlab.com) for supporting us. GitLab is one of the main code hosting and CI/CD providers out there. They support the open source community through their GitLab for [Open Source program](https://about.gitlab.com/solutions/open-source/). Please check them out.
