@@ -26,12 +26,23 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
-        
-    - name: Run crawler (Finalize)
+        python -m pip install --upgrade pip
+        pip install poetry flake8
+        poetry install
+    - name: Lint with flake8
+      run: |
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Run unittests
+      run: |
+        poetry run pytest
+    - name: Make sure crawler is working (Attempt to subscribe to 1 course)
       env:
         UDEMY_EMAIL: ${{ secrets.UDEMY_EMAIL }}
         UDEMY_PASSWORD: ${{ secrets.UDEMY_PASSWORD }}
         CI_TEST: "True"
+
       run: |
-        python udemy_enroller.py --max-pages=10 --debug
+        poetry run python udemy_enroller.py --max-pages=5 --debug
