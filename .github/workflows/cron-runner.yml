@@ -15,7 +15,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [windows-latest]
         python-version: [3.8]
 
     steps:
@@ -26,7 +26,6 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
         pip install -r requirements.txt
         
     - name: Run crawler (Finalize)
@@ -35,4 +34,4 @@ jobs:
         UDEMY_PASSWORD: ${{ secrets.UDEMY_PASSWORD }}
         CI_TEST: "True"
       run: |
-        python udemy_enroller.py --max-pages=60 --debug
+        python udemy_enroller.py --max-pages=10 --debug
