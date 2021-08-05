@@ -34,7 +34,7 @@ jobs:
         UDEMY_PASSWORD: ${{ secrets.UDEMY_PASSWORD }}
         CI_TEST: "True"
       run: |
-        python udemy_enroller.py --max-pages=10 --debug
+        python udemy_enroller.py --max-pages=4 --debug
 
 
 
