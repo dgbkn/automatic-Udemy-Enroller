@@ -5,9 +5,9 @@ name: Automatic Daily Enroller
 
 on:
   workflow_dispatch:
-  schedule:
+ # schedule:
   # Runs at 12am IST
-  - cron: '30 18 */3 * *'
+ # - cron: '30 18 */3 * *'
 
 jobs:
   build:
